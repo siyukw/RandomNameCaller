@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class num {
     public static void main(String[] args) {
         Random generate = new Random();
@@ -8,7 +7,7 @@ public class num {
                 "Kayla Hartland", "Maya Pandurangan", "Mehak Juneja", "Mona Cobb",
                 "Pallavi Kanoor", "Pratiti Manojkumar", "Saga Elsekhely",
                 "Sanniyah Knight", "Segiade Olajuwon", "Shivani Chandrasekaran",
-                "Simone Pipkin", "Wendy Yupa"};
-        System.out.println(name[generate.nextInt(17)]);
+                "Simone Pipkin", "Wendy Yupa", "Sophia Augustine"};
+        System.out.println(name[generate.nextInt(18)]);
     }
 }
