@@ -1,5 +1,8 @@
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.*;
+import java.io.*;
+import javax.imageio.*;
 
 public class num {
     public static void main(String[] args) {
@@ -30,10 +33,16 @@ public class num {
     public static void draw(String name) {
         DrawingPanel p = new DrawingPanel(1000, 600);
         Graphics g = p.getGraphics();
-        p.setBackground(new Color(146, 208, 183));
+        p.setBackground(new Color(183, 251, 230));
         Font newFont = g.getFont().deriveFont(g.getFont().getSize() * 7F);
         g.setFont(newFont);
         g.drawString(name, 200, 250);
+        BufferedImage img = null;
+        try{
+            img = ImageIO.read(new File("girlswhocodegwc-logo.png"));
+        } catch (IOException e) {
+        }
+        g.drawImage(img, 100, 100, null);
     }
 
 }
